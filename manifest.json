@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Kibana Quick Filters",
+  "version": "0.2",
+  "description": "Trigger Kibana searches with hotkeys",
+  "permissions": ["tabs", "activeTab"],
+  "background": {
+    "service_worker": "kibanaext.js"
+  },
+  "commands": {
+    "suricata-search": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+K"
+      },
+      "description": "Run Suricata filter in Kibana"
+    },
+    "system-search": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+L"
+      },
+      "description": "Run System filter in Kibana"
+    },
+    "sysmon-search": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+M"
+      },
+      "description": "Run Sysmon filter in Kibana"
+    }
+  }
+}
