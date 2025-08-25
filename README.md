@@ -8,3 +8,4 @@
 - kibanaext
     - Include CLI arguments
     - Add customizability for filters
+    - Test in live environment
